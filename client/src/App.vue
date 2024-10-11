@@ -6,7 +6,6 @@ import { AppState } from './AppState.js';
 
 <template>
   <header>
-    <Navbar />
   </header>
   <main>
     <router-view />

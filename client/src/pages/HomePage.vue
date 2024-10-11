@@ -3,35 +3,50 @@
 </script>
 
 <template>
-  <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
-    <div class="home-card p-5 card align-items-center shadow rounded elevation-3">
-      <img src="@/assets/img/cw-circle-logo.png" alt="CodeWorks Logo"
-        class="rounded-circle">
-      <h1 class="my-5 bg-dark text-white p-3 rounded text-center">
-        Vue 3 Starter
-      </h1>
+  <section class="container-fluid">
+    <div class="row justify-content-center pt-3">
+      <div class="col-3 header-box text-center fst-italic">
+        <h1>Kate's Lashes</h1>
+      </div>
     </div>
-  </div>
+    <div class="row justify-content-center pt-3">
+      <div class="col-4 d-flex justify-content-center">
+        <button class="header-btn">Home</button>
+        <button class="header-btn ms-3 me-3">Styles</button>
+        <button class="header-btn">Schedule</button>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
-.home {
-  display: grid;
-  height: 80vh;
-  place-content: center;
-  text-align: center;
-  user-select: none;
+.header-box{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-bottom: solid 1px black;
+}
 
-  .home-card {
-    width: clamp(500px, 50vw, 100%);
+.header-btn{
+  all: unset;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  background-color: rgb(184, 114, 126);
+  outline: solid 2px rgb(160, 96, 107);
+  border-radius: 6px;
+}
 
-    >img {
-      height: 200px;
-      max-width: 200px;
-      width: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-  }
+.header-btn:hover{
+  all: unset;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  background-color: rgb(199, 123, 136);
+  outline: solid 2px rgb(160, 96, 107);
+  border-radius: 6px;
+  cursor: pointer;
 }
 </style>
